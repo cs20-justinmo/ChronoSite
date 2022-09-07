@@ -1,0 +1,36 @@
+html {
+  background-color: #000000;
+  background-image: url("img/pendulum.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(138, 132, 132);
+  background-image: url(img/textboxloop.png);
+  background-repeat: repeat;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  margin: 20px auto;
+  width: 600px;
+  padding: 20px 100px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
