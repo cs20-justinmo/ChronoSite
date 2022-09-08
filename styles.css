@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Chrono;
+  src: url(font/Chrono.ttf);
+}
+
+@font-face {
+  font-family: ChronoPixel;
+  src: url(font/ChronoType.otf);
+}
+
 html {
   background: #000000 url("img/bg.png") no-repeat fixed center center;
   background-size: cover;
@@ -12,7 +22,9 @@ body {
   font-family: "Chrono", sans-serif;
   margin: 20px auto;
   width: 600px;
-  padding: 20px 100px;
+  border: 24px solid transparent;
+  padding: 15px;
+  border-image: url(img/border.png) 30 round;
 }
 
 p {
@@ -40,4 +52,13 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.navi {
+  text-align: center;
+  outline-style: double;
+}
+
+.center {
+  text-align: center;
 }
