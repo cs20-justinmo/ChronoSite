@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Chrono;
+  src: url(Chrono.ttf);
+}
+
+div {
+  border: 24px solid transparent;
+  background-image: url(img/textboxloop.png);
+  background-repeat: repeat;
+  color: #ffffff;
+  font-family: "Chrono", sans-serif;
+  margin: auto;
+  width: 215px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  padding: 15px;
+  border-image: url(img/border.png) 30 round;
+  position: fixed;
+}
+
+p {
+  font-size: 25px;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

@@ -1,8 +1,5 @@
 html {
-  background-color: #000000;
-  background-image: url("img/pendulum.png");
-  height: 600px;
-  background-repeat: no-repeat;
+  background: #000000 url("img/bg.png") no-repeat fixed center center;
   background-size: cover;
 }
 
@@ -12,17 +9,28 @@ body {
   background-image: url(img/textboxloop.png);
   background-repeat: repeat;
   color: #ffffff;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Chrono", sans-serif;
   margin: 20px auto;
   width: 600px;
   padding: 20px 100px;
   border-radius: 10px;
 }
 
+p {
+  font-size: 25px;
+}
+
 h1 {
   color: #ffffff;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "ChronoPixel", sans-serif;
   margin-left: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "ChronoPixel", sans-serif;
+  font-size: 40px;
+  text-align: center;
 }
 
 a {

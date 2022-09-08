@@ -2,16 +2,30 @@
 <html>
   <head>
     <title>Chrono Trigger Quiz</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      @font-face {
+        font-family: Chrono;
+        src: url(Chrono.ttf);
+      }
+      @font-face {
+        font-family: ChronoPixel;
+        src: url(ChronoType.otf);
+      }
+      #borderimg { 
+        border: 24px solid transparent;
+        padding: 15px;
+        border-image: url(img/border.png) 30 round;
+      }
+      p.navi {text-align: center;}
+      p.navi {outline-style: double;}
+    </style>
   </head>
-  <body>
-    <p>
-      <a href="index.html">Home</a> | <a href="about.html">About</a>
+  <body id="borderimg">
+    <p class="navi">
+      <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="quiz.html">Quiz</a>
     </p>
-      <h1>to be completed</h1>
+    <h1>to be completed</h1>
   </body>
 </html>
