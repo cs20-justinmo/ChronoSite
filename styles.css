@@ -17,7 +17,6 @@ body {
   border: 3px solid rgb(255, 255, 255);
   background-color: rgb(138, 132, 132);
   background-image: url(img/textboxloop.png);
-  background-repeat: repeat;
   color: #ffffff;
   font-family: "Chrono", sans-serif;
   margin: 20px auto;

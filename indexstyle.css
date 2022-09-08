@@ -1,3 +1,7 @@
+html {
+  background: black;
+}
+
 @font-face {
   font-family: Chrono;
   src: url(font/Chrono.ttf);
@@ -5,18 +9,18 @@
 
 div {
   border: 24px solid transparent;
+  background-color: rgb(138, 132, 132);
   background-image: url(img/textboxloop.png);
-  background-repeat: repeat;
   color: #ffffff;
   font-family: "Chrono", sans-serif;
   margin: auto;
   width: 215px;
-  padding: 20px 20px;
-  padding: 15px;
+  padding: 0px 20px;
   border-image: url(img/border.png) 30 round;
   position: fixed;
   right: 0;
   left: 0;
+  bottom: 0;
 }
 
 p {
@@ -39,6 +43,4 @@ video {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  min-width: 100%;
-  min-height: 100%;
 }
