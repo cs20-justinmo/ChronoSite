@@ -28,6 +28,7 @@ body {
 
 p {
   font-size: 25px;
+  margin-top: 10px;
 }
 
 h1 {
@@ -66,6 +67,15 @@ a:hover {
 .caption {
   font-size: 16px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.centercaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 img {
