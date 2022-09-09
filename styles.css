@@ -32,15 +32,16 @@ p {
 
 h1 {
   color: #ffffff;
-  font-family: "ChronoPixel", sans-serif;
+  font-family: "ChronoPixel";
   margin-left: 20px;
 }
 
 h2 {
   color: #ffffff;
-  font-family: "ChronoPixel", sans-serif;
+  font-family: "ChronoPixel";
   font-size: 40px;
   text-align: center;
+  margin: 0px;
 }
 
 a {
@@ -60,4 +61,17 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: left;
+}
+
+img {
+  width: 600px;
+}
+
+hr {
+  width: 300px;
 }
