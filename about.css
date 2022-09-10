@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Chrono;
+  src: url(font/Chrono.ttf);
+}
+
+@font-face {
+  font-family: ChronoPixel;
+  src: url(font/ChronoType.otf);
+}
+
+html {
+  background: #000000 url("img/bgAbout.png") no-repeat fixed center center;
+  background-size: cover;
+}
+
+body {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(138, 132, 132);
+  background-image: url(img/textboxloop.png);
+  color: #ffffff;
+  font-family: "Chrono", sans-serif;
+  margin: 20px auto;
+  width: 600px;
+  border: 24px solid transparent;
+  padding: 15px;
+  border-image: url(img/border.png) 30 round;
+}
+
+p {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "ChronoPixel";
+  margin-left: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "ChronoPixel";
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navi {
+  text-align: center;
+  outline-style: double;
+}
+
+.center {
+  text-align: center;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.centercaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 600px;
+}
+
+hr {
+  width: 300px;
+}
