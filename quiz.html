@@ -4,11 +4,25 @@
     <title>Chrono Trigger Quiz</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="quiz.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <p class="navi">
-      <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="quiz.html">Quiz</a>
-    </p>
+    <audio id="bgm" autoplay loop>
+      <source src="snd/Corridors of Time.mp3" type="audio/mp3">
+    </audio>
+    <script>
+      var audio = document.getElementById("bgm");
+      audio.volume = 0.3;
+    </script>
+
+    <audio id="select" src="snd/select.mp3" type="audio/mp3"></audio>
+    <a onmouseover="play()" href="index.html"><img 
+      src="img/logo.png" 
+      alt="Chrono Trigger Logo" /></a>
+  <p class="center">
+    <a onmouseover="play()" href="about.html"><button>About</button></a>
+    <a onmouseover="play()" href="quiz.html"><button>Quiz</button></a>
+  </p>
 
     <h3>Question 1</h3>  
     <p>Lorem ipsum dolor sit amet.</p>
@@ -58,7 +72,7 @@
     <h4>Answer: <input type="text"></h4>
     <hr>
 
-    <p><button>Check Answers</button></p>
+    <div class="center"><p><button class="check" onclick="play()">Check Answers</button></p></div>
 
     <p>Score: _/8 (___%)</p>
   </body>

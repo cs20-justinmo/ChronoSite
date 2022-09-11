@@ -1,26 +1,30 @@
-html {
-  background: black;
-}
-
 @font-face {
   font-family: Chrono;
   src: url(font/Chrono.ttf);
 }
 
-div {
-  border: 24px solid transparent;
-  background-color: rgb(138, 132, 132);
-  background-image: url(img/textboxloop.png);
-  color: #ffffff;
+@font-face {
+  font-family: ChronoPixel;
+  src: url(font/ChronoType.otf);
+}
+
+html {
+  background: black;
   font-family: "Chrono", sans-serif;
+}
+
+div {
+  /* border: 24px solid transparent;
+  background-color: rgb(138, 132, 132);
+  background-image: url(img/textboxloop.png); */
+  color: #ffffff;
   margin: auto;
   width: 215px;
   padding: 0px 20px;
   border-image: url(img/border.png) 30 round;
   position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  left: 40%;
+  top: 50%;
 }
 
 p {
@@ -43,4 +47,22 @@ video {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+button {
+  background-color: rgb(0,0,0,0);
+  font-family: "ChronoPixel", sans-serif;
+  font-size: 64px;
+  padding: 1px 80px;
+  margin: -2px;
+  text-align: left;
+  color: #ffffff;
+  border-color: rgb(0,0,0,0);
+}
+
+button:hover {
+  background-image: url(img/cursor.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
 }
