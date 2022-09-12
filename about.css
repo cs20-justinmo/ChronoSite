@@ -103,3 +103,7 @@ button:hover {
   background-position: left center;
   cursor: pointer;
 }
+
+.logo:hover {
+  content: url(img/logohover.png);
+}

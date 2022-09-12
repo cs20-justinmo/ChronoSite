@@ -6,27 +6,24 @@
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onclick="showNav()">
     <video muted autoplay>
       <source src="img/chrono.mp4" type="video/mp4">
     </video>
     <audio autoplay>
       <source src="snd/Presentiment.mp3" type="audio/mp3">
     </audio>
-    <script>
-      function play() {
-        var audio = document.getElementById("select");
-        audio.play();
-      }
-    </script>
     <audio id="select" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
-    <div>
+    <div class="nav" id="nav" style="display: none">
       <p>
         <audio id="select" src="snd/select.mp3" type="audio/mp3"></audio>
         <a onmouseover="play()" href="index.html"><button>Replay</button></a><br>
         <a onmouseover="play()" href="about.html"><button>About</button></a><br>
         <a onmouseover="play()" href="quiz.html"><button>Quiz</button></a>
       </p>
+    </div>
+    <div id="hideme">
+      <p class="text">Click anywhere to begin navigation.</p>
     </div>
   </body>
 </html>

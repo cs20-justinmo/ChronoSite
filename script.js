@@ -1,11 +1,15 @@
+//preloads image
+var image = new Image();
+image.src = "img/logohover.png";
+
+//plays select sound
 function play() {
     var audio = document.getElementById("select");
     audio.play();
 }
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if (!isChrome){
-    $('#iframeAudio').remove()
-}
-else {
-    $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+
+//shows navigation on index
+function showNav() {
+    document.getElementById('nav').style.display = "block";
+    document.getElementById('hideme').style.display = "none";
 }
