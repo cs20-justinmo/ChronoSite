@@ -10,9 +10,8 @@ body {
 }
 
 .text {
-  border: 24px solid transparent;
+  border: 24px solid;
   border-image: url(img/border.png) 30 round;
-  background-color: rgb(138, 132, 132);
   background-image: url(img/textboxloop.png);
   width: 460px;
   margin: auto;

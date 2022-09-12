@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  border: 3px solid rgb(255, 255, 255);
+  border: solid;
   background-color: rgb(138, 132, 132);
   background-image: url(img/textboxloop.png);
   color: #ffffff;
@@ -31,69 +31,18 @@ p {
   margin-top: 10px;
 }
 
-h1 {
-  color: #ffffff;
-  font-family: "ChronoPixel";
-  margin-left: 20px;
-}
-
-h2 {
-  color: #ffffff;
-  font-family: "ChronoPixel";
-  font-size: 40px;
-  text-align: center;
-  margin: 0px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .center {
   text-align: center;
 }
 
-.caption {
-  font-size: 16px;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.centercaption {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-img {
-  width: 600px;
-}
-
 hr {
-  width: 300px;
-}
-
-button {
-  background-color: rgb(0,0,0,0);
-  font-family: "ChronoPixel", sans-serif;
-  font-size: 48px;
-  padding: 1px 50px;
-  margin: auto;
-  text-align: left;
-  color: #ffffff;
-  border-color: rgb(0,0,0,0);
+  width: 500px;
 }
 
 .check {
   background-color: rgb(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
   font-family: "ChronoPixel", sans-serif;
   font-size: 48px;
   padding: 1px 50px;
@@ -103,13 +52,41 @@ button {
   border-color: rgb(0, 0, 0, 0.5);
 }
 
-button:hover {
-  background-image: url(img/cursorsmall.png);
-  background-repeat: no-repeat;
-  background-position: left center;
+.check:hover {
+  background-color: rgba(0, 132, 255, 0.5);
+  color: yellow;
   cursor: pointer;
+}
+
+.nav {
+  background-color: transparent;
+  border: none;
+  font-family: "ChronoPixel", sans-serif;
+  font-size: 48px;
+  padding: 1px 50px 1px 0px;
+  color: #ffffff;
+}
+
+.nav:hover {
+  background-image: url(img/cursorsmallreverse.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+#float {
+  float: left;
+  width: 400px;
+}
+
+.logo {
+  width: 400px;
 }
 
 .logo:hover {
   content: url(img/logohover.png);
+}
+
+.right {
+  text-align: right;
 }
