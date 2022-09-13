@@ -9,6 +9,7 @@
 
   <body>
     <audio id="select" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="navbad" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
 
     <div id="float">
       <a onmouseover="play()" href="index.html">
@@ -17,8 +18,8 @@
           alt="Chrono Trigger Logo"/></a>
       </div>
       <div class="right"><p>
-        <a onmouseover="play()" href="about.html"><button class="nav">About</button></a> <br>
-        <a onmouseover="play()" href="quiz.html"><button class="nav">Quiz</button></a>
+        <a onmouseover="play()" onclick="navbad()"><button class="nav" id="navcurrent">About</button></a> <br>
+        <a onmouseover="play()" href="quiz.html"><button class="nav" >Quiz</button></a>
       </p></div>
 
     <div class="h1box"><h1>About Chrono Trigger</h1></div>
@@ -47,7 +48,7 @@
       <p class="centercaption">The theme that plays during one of the last areas of the game: <i>Black Omen</i>, composed by Yasunori Mitsuda.</p>
 
       <p>
-        After time travelling to the bleak future of 2300 AD, Crono and his friends vow to save the world from the chaotic events that happen in 1999 AD by Lavos.
+        <i>Chrono Trigger</i> starts in the year 1000 AD on Earth, where a fair is taking place for the one thousandth anniversary of the kingdom. Crono's friend Lucca and her dad invented a teleportation device to show off at the Millenial Fair but instead of teleporting, they time travel instead through Time Gates. They travel to various eras, however travelling to the post-apocalyptic future of 2300 AD would allow them to see events that happened in 1999 AD that destroyed the Earth, caused by an entity called Lavos. Crono and his friends' goal is now to defeat Lavos in the past and change the future.
       </p>
 
     <h2>Soundtrack</h2>
@@ -73,8 +74,7 @@
       <p class="caption">Six of the seven playable characters in <i>Chrono Trigger</i>, featured on the Japanese box art. From left to right: Frog, Ayla, Lucca, Robo, Marle, Crono.</p>
 
       <p>
-        <i>Chrono Trigger</i> has a cast made up of people from different time periods. The characters were designed by the creator of Dragon Ball, Akira Toriyama, and his style is reflected in <i>Chrono Trigger</i>. Crono is the main character and is the first character the player can control. He can wield Light magic. Crono is from the present, 1000 AD. In this time period, Crono meets two other people, Marle and Lucca. They can wield Ice and Fire magic respectively.
-      (complete this)
+        <i>Chrono Trigger</i> has a cast made up of people from different time periods. The characters were designed by the creator of Dragon Ball, Akira Toriyama, and his style is reflected in <i>Chrono Trigger</i><span id="dots">..</span>. <span id="more">Crono is the main character and is the first character the player can control. He can wield Light magic. Crono is from the present, 1000 AD. At the Millenial Fair, Crono meets two other people, Marle and Lucca. They can wield Ice and Fire magic respectively. Crono and Marle travel to 600 AD where they meet a knight named Frog, who is a human turned into a frog that can use Water magic. In the year 2300 AD they meet a robot named Robo, and in the year 65,000,000 BC, they meet Ayla. Both of them cannot use magic, one for not being human and the other because magic hadn't been invented yet.</span>
       </p>
       
     <h2>Gameplay</h2>
@@ -88,7 +88,9 @@
       <p class="centercaption">The theme that plays during battle: <i>Battle 1</i>, composed by Yasunori Mitsuda.</p>
 
       <p>
-        Lorem ipsum dolor sit amet.
+        Gameplay is similar to that of a standard <a href="https://en.wikipedia.org/wiki/Role-playing_video_game">role-playing game</a>. You control a party of three around a world map and enter various locations. When you get into a battle, you can use Attacks, Techniques, or use an Item. Each character has a Hit Point meter, a Magic Point meter, and a stamina meter. You must wait for the stamina meter to fill before the character can do something, and once they do an action their stamina meter goes back to zero. Characters can increase their Attack and Defense stats by switching equipment or using items.
+        <br><br>
+        You can also use Techniques, which take MP to use, but allows a character to deal more damage, hit multiple enemies, or apply a status effect. Characters can also combine Techniques to make Dual and Triple Techs.
       </p>
   </body>
 </html>

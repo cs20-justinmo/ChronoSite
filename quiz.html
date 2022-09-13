@@ -17,7 +17,7 @@
       </div>
       <div class="right"><p>
         <a onmouseover="play()" href="about.html"><button class="nav">About</button></a> <br>
-        <a onmouseover="play()" href="quiz.html"><button class="nav">Quiz</button></a>
+        <a onmouseover="play()" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
       </p></div>
 
   <hr />
@@ -25,53 +25,53 @@
     <source src="snd/Corridors of Time.mp3" type="audio/mp3">
   </audio></div>
 
-  <div class="h1box"><h1>About Chrono Trigger</h1></div>
+  <div class="h1box"><h1>Quiz</h1></div>
   
   <script>
     var audio = document.getElementById("bgm");
     audio.volume = 0.3;
   </script>
     <h3>Question 1</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>What year was <i>Chrono Trigger</i> released?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 2</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>What is a console that you can play <i>Chrono Trigger</i> on?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 3</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Who is a member of the <strong>Dream Team</strong>?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 4</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>What is the first time era in <i>Chrono Trigger</i>?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 5</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>What is the main enemy in <i>Chrono Trigger</i>?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 6</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Who is the composer for <i>Chrono Trigger</i>?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 7</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Name a type of magic.</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
     <h3>Question 8</h3>  
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>What action takes MP to use?</p>
     <h4>Answer: <input type="text"></h4>
     <hr>
 
-    <div class="center"><p><button class="check" onclick="play()">Check Answers</button></p></div>
-    <p>Score: _/8 (___%)</p>
+    <div class="center"><button class="check" onclick="play()">Check Answers</button></div>
+    <h1 class="center">Score: _/8 (___%)</h1>
   </body>
 </html>
