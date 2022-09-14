@@ -29,6 +29,7 @@ body {
 p {
   font-size: 25px;
   margin-top: 10px;
+  font-style: normal;
 }
 
 img {
@@ -61,13 +62,106 @@ h2 {
   margin: 0px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+/* used for navigation */
+.navigationmain {
+  padding: 10px;
+}
+
 #navcurrent {
   color: red;
   text-decoration: underline;
 }
 
-#more {
+.nav {
+  background-color: transparent;
+  border: none;
+  font-family: "ChronoPixel", sans-serif;
+  font-size: 48px;
+  padding: 1px 50px 1px 0px;
+  color: #ffffff;
+}
+
+.nav:hover {
+  background-image: url(img/cursorsmallreverse.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.float {
+  float: left;
+  width: 400px;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo:hover {
+  content: url(img/logohover.png);
+}
+
+.right {
+  text-align: right;
+}
+
+/* other classes/ids */
+.audioBox {
+  font-style: normal;
+  font-family: "ChronoPixel";
+  color: #ffffff;
+  border: 24px solid;
+  border-image: url(img/borderBlue.png) 30 round;
+  background-image: url(img/textboxloopBlue.png);
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Chrono';
+}
+
+.tab {
+  overflow: hidden;
+  font-style: normal;
+  font-family: "ChronoPixel";
+  color: #ffffff;
+  border: 24px solid;
+  border-image: url(img/borderBlue.png) 30 round;
+  background-image: url(img/textboxloopBlue.png);
+}
+
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: 'ChronoPixel';
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: rgba(201, 201, 201, 0.5);
+}
+
+.tab button:active {
+  background-color: rgba(0, 255, 255, 0.5);
+  transition: 0s;
+}
+
+.tabcontent {
   display: none;
+  font-style: normal;
+  font-family: "ChronoPixel";
+  color: #ffffff;
+  border: 24px solid;
+  border-image: url(img/borderBlue.png) 30 round;
+  background-image: url(img/textboxloopBlue.png);
 }
 
 .h1box {
@@ -90,39 +184,6 @@ h2 {
 .centercaption {
   font-size: 16px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.nav {
-  background-color: transparent;
-  border: none;
-  font-family: "ChronoPixel", sans-serif;
-  font-size: 48px;
-  padding: 1px 50px 1px 0px;
-  color: #ffffff;
-}
-
-.nav:hover {
-  background-image: url(img/cursorsmallreverse.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  cursor: pointer;
-}
-
-#float {
-  float: left;
-  width: 400px;
-}
-
-.logo {
-  width: 400px;
-}
-
-.logo:hover {
-  content: url(img/logohover.png);
-}
-
-.right {
-  text-align: right;
+  font-family: 'Chrono';
+  margin-top: 20px;
 }

@@ -44,11 +44,50 @@ hr {
   width: 500px;
 }
 
+/* used for navigation */
+.navigationmain {
+  padding: 10px;
+}
+
 #navcurrent {
   color: red;
   text-decoration: underline;
 }
 
+.nav {
+  background-color: transparent;
+  border: none;
+  font-family: "ChronoPixel", sans-serif;
+  font-size: 48px;
+  padding: 1px 50px 1px 0px;
+  color: #ffffff;
+}
+
+.nav:hover {
+  background-image: url(img/cursorsmallreverse.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.float {
+  float: left;
+  width: 400px;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo:hover {
+  content: url(img/logohover.png);
+}
+
+.right {
+  text-align: right;
+}
+
+/* other classes/ids */
 .center {
   text-align: center;
 }
@@ -79,37 +118,4 @@ hr {
 .check:active {
   background-color: rgba(0, 255, 255, 0.5);
   transition: 0s;
-}
-
-.nav {
-  background-color: transparent;
-  border: none;
-  font-family: "ChronoPixel", sans-serif;
-  font-size: 48px;
-  padding: 1px 50px 1px 0px;
-  color: #ffffff;
-}
-
-.nav:hover {
-  background-image: url(img/cursorsmallreverse.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  cursor: pointer;
-}
-
-#float {
-  float: left;
-  width: 400px;
-}
-
-.logo {
-  width: 400px;
-}
-
-.logo:hover {
-  content: url(img/logohover.png);
-}
-
-.right {
-  text-align: right;
 }

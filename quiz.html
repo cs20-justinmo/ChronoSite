@@ -9,16 +9,20 @@
   <body>
     <audio id="select" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
     
-    <div id="float">
-      <a onmouseover="play()" href="index.html">
+    <!-- navigation -->
+    <div class="navigationmain">
+      <div class="float">
+        <a onmouseover="play()" href="index.html">
         <img class="logo" 
           src="img/logo.png" 
-          alt="Chrono Trigger Logo"/></a>
+          alt="Chrono Trigger Logo"/>
+        </a>
       </div>
-      <div class="right"><p>
+      <div class="right">
         <a onmouseover="play()" href="about.html"><button class="nav">About</button></a> <br>
         <a onmouseover="play()" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
-      </p></div>
+      </div>
+    </div>
 
   <hr />
   <div align="center"><audio id="bgm" controls autoplay loop preload="auto">
