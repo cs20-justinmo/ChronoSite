@@ -18,6 +18,8 @@ function navbad() {
 function showNav() {
     document.getElementById('nav').style.display = "block";
     document.getElementById('hideme').style.display = "none";
+    var introvid = document.getElementById('introvid');
+    introvid.currentTime = introvid.duration;
 }
 
 //tabs for character section in about page
