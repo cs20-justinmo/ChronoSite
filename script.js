@@ -1,14 +1,14 @@
-//preloads image
+//preloads image on about and quiz pages
 var image = new Image();
 image.src = "img/logohover.png";
 
-//plays select sound
+//plays select sound on all pages
 function play() {
     var audio = document.getElementById("select");
     audio.play();
 }
 
-//plays sound when on current page
+//plays this sound when trying to navigate to current page
 function navbad() {
     var audio = document.getElementById("select");
     audio.play();

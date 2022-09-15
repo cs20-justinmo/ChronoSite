@@ -63,7 +63,8 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 40px;
+  margin: 0;
 }
 
 /* used for navigation */
@@ -162,6 +163,7 @@ h3 {
   border: 24px solid;
   border-image: url(img/borderBlue.png) 30 round;
   background-image: url(img/textboxloopBlue.png);
+  float: left;
 }
 
 .h1box {
@@ -186,4 +188,9 @@ h3 {
   text-align: center;
   font-family: 'Chrono';
   margin-top: 20px;
+}
+
+.charimg {
+  float: left;
+  width: 200px;
 }
