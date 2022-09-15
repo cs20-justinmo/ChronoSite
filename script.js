@@ -42,4 +42,8 @@ function char(evt, charName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(charName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
+
+//make audio quiet by default on quiz page
+var audio = document.getElementById("bgm");
+audio.volume = 0.3;

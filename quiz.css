@@ -127,3 +127,9 @@ hr {
   background-color: rgba(0, 255, 255, 0.5);
   transition: 0s;
 }
+
+.questionbox {
+  border: 24px solid;
+  border-image: url(img/borderBlue.png) 30 round;
+  background-image: url(img/textboxloopBlue.png);
+}
