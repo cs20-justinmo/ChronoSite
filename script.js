@@ -45,5 +45,7 @@ function char(evt, charName) {
 }
 
 //make audio quiet by default on quiz page
-var audio = document.getElementById("bgm");
-audio.volume = 0.3;
+if (window.location.pathname == '/quiz.html') {
+  var quizBGM = document.getElementById("bgm");
+  quizBGM.volume = 0.3;
+}

@@ -10,6 +10,7 @@ body {
 }
 
 .text {
+  /* this part is really scuffed don't look at it too hard */
   border: 24px solid;
   border-image: url(img/border.png) 30 round;
   background-image: url(img/textboxloop.png);
