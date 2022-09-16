@@ -10,7 +10,7 @@ function play() {
 
 //plays this sound when trying to navigate to current page
 function navbad() {
-    var audio = document.getElementById("select");
+    var audio = document.getElementById("navbad");
     audio.play();
 }
 
