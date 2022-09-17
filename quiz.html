@@ -14,15 +14,15 @@
   <!-- navigation -->
   <div class="navigationmain">
     <div class="float">
-      <a onmouseover="play()" href="index.html">
+      <a onmouseover="selectPlay()" href="index.html">
       <img class="logo" 
         src="img/logo.png" 
         alt="Chrono Trigger Logo"/>
       </a>
     </div>
     <div class="right">
-      <a onmouseover="play()" href="about.html"><button class="nav">About</button></a> <br>
-      <a onmouseover="play()" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
+      <a onmouseover="selectPlay()" href="about.html"><button class="nav">About</button></a> <br>
+      <a onmouseover="selectPlay()" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
     </div>
   </div>
 
@@ -30,6 +30,7 @@
   <div align="center"><audio id="bgm" controls autoplay loop preload="auto">
     <source src="snd/Corridors of Time.mp3" type="audio/mp3">
   </audio></div>
+  <p class="centercaption">The most listened Chrono Trigger song on Spotify: <i>Corridors of Time</i>, composed by Yasunori Mitsuda.</p>
 
   <div class="h1box"><h1>Quiz</h1></div>
 
@@ -89,7 +90,7 @@
   </div>
     <hr>
 
-    <div class="center"><button class="check" onclick="play()">Check Answers</button></div>
+    <div class="center"><button class="check" onclick="selectPlay()">Check Answers</button></div>
     <h1 class="center">Score: _/8 (___%)</h1>
   </body>
 </html>

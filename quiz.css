@@ -98,6 +98,13 @@ hr {
 }
 
 /* other classes/ids */
+.centercaption {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Chrono';
+  margin-top: 20px;
+}
+
 .center {
   text-align: center;
 }

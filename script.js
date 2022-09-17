@@ -3,7 +3,7 @@ var image = new Image();
 image.src = "img/logohover.png";
 
 //plays select sound on all pages
-function play() {
+function selectPlay() {
     var audio = document.getElementById("select");
     audio.play();
 }
@@ -45,7 +45,9 @@ function char(evt, charName) {
 }
 
 //make audio quiet by default on quiz page
-if (window.location.pathname == '/quiz.html') {
-  var quizBGM = document.getElementById("bgm");
-  quizBGM.volume = 0.3;
+function quizAudio() {
+  if (window.location.pathname == '/quiz.html') {
+    var quizBGM = document.getElementById("bgm");
+    quizBGM.volume = 0.3;
+  }
 }
