@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="quiz.css">
     <script src="script.js"></script>
+    <script src="quiz.js"></script>
   </head>
   <body>
   <!-- select sounds -->  
@@ -34,7 +35,7 @@
 
   <div class="h1box"><h1>Quiz</h1></div>
 
-  <div class="questionbox">
+  <div class="questionbox" id="q1">
     <h2>Question 1</h2>  
     <p>What <strong>year</strong> was <i>Chrono Trigger</i> released?</p>
     <h3>Answer: <input type="text" maxlength="4"></h3>
@@ -90,7 +91,7 @@
   </div>
     <hr>
 
-    <div class="center"><button class="check" onclick="selectPlay()">Check Answers</button></div>
+    <div class="center"><button class="check" onclick="checkAnswers()">Check Answers</button></div>
     <h1 class="center">Score: _/8 (___%)</h1>
   </body>
 </html>
