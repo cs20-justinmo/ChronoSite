@@ -1,8 +1,10 @@
 //preloads image on about and quiz pages
-var image = new Image();
-image.src = "img/logohover.png";
+if (window.location.pathname == '/quiz.html' || window.location.pathname == '/about.html') {
+  var image = new Image();
+  image.src = "img/logohover.png";
+}
 
-//plays select sound on all pages
+//plays select sound
 function selectPlay() {
     var audio = document.getElementById("select");
     audio.play();
@@ -46,8 +48,6 @@ function char(evt, charName) {
 
 //make audio quiet by default on quiz page
 function quizAudio() {
-  if (window.location.pathname == '/quiz.html') {
-    var quizBGM = document.getElementById("bgm");
-    quizBGM.volume = 0.3;
-  }
+  var quizBGM = document.getElementById("bgm");
+  quizBGM.volume = 0.3;
 }
