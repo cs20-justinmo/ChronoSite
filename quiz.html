@@ -4,8 +4,8 @@
     <title>Chrono Trigger Quiz</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="quiz.css">
-    <script src="script.js"></script>
-    <script src="quiz.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="quiz.js"></script>
   </head>
   <body>
   <!-- select sounds -->  
@@ -15,15 +15,15 @@
   <!-- navigation -->
   <div class="navigationmain">
     <div class="float">
-      <a onmouseover="selectPlay()" href="index.html">
+      <a id="selectbutton" href="index.html">
       <img class="logo" 
         src="img/logo.png" 
         alt="Chrono Trigger Logo"/>
       </a>
     </div>
     <div class="right">
-      <a onmouseover="selectPlay()" href="about.html"><button class="nav">About</button></a> <br>
-      <a onmouseover="selectPlay()" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
+      <a id="selectbutton" href="about.html"><button class="nav">About</button></a> <br>
+      <a id="selectbutton" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
     </div>
   </div>
 
@@ -35,63 +35,63 @@
 
   <div class="h1box"><h1>Quiz</h1></div>
 
-  <div class="questionbox" id="q1">
+  <div class="questionbox">
     <h2>Question 1</h2>  
     <p>What <strong>year</strong> was <i>Chrono Trigger</i> released?</p>
-    <h3>Answer: <input type="text" maxlength="4"></h3>
+    <h3>Answer: <input id="q1" type="text" maxlength="4"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 2</h2>  
     <p>What is a <strong>console</strong> that you can play <i>Chrono Trigger</i> on?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q2" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 3</h2>  
     <p>Who is a member of the <strong>Dream Team</strong>?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q3" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 4</h2>  
     <p>What is the <strong>first time era</strong> in <i>Chrono Trigger</i>?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q4" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 5</h2>  
     <p>What is the <strong>main enemy/final boss</strong> in <i>Chrono Trigger</i>?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q5" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 6</h2>  
     <p>Who is the <strong>main composer</strong> for <i>Chrono Trigger</i>?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q6" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 7</h2>  
     <p>Name a type of <strong>magic</strong>.</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q7" type="text"></h3>
   </div>
     <hr>
 
   <div class="questionbox">
     <h2>Question 8</h2>  
     <p>What type of <strong>action</strong> takes MP to use?</p>
-    <h3>Answer: <input type="text"></h3>
+    <h3>Answer: <input id="q8" type="text"></h3>
   </div>
     <hr>
 
-    <div class="center"><button class="check" onclick="checkAnswers()">Check Answers</button></div>
-    <h1 class="center">Score: _/8 (___%)</h1>
+    <div class="center"><button id="check">Check Answers</button></div>
+    <h1 class="center" id="finalResults">Score: _/8 (___%)</h1>
   </body>
 </html>

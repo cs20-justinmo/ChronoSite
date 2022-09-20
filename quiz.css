@@ -115,7 +115,7 @@ hr {
   border-radius: 20px;
 }
 
-.check {
+#check {
   background-color: rgb(0, 0, 0, 0.5);
   border: none;
   border-radius: 10px;
@@ -127,12 +127,12 @@ hr {
   transition: 0.5s;
 }
 
-.check:hover {
+#check:hover {
   background-color: rgba(201, 201, 201, 0.5);
   cursor: pointer;
 }
 
-.check:active {
+#check:active {
   background-color: rgba(0, 255, 255, 0.5);
   transition: 0s;
 }
