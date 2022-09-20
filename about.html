@@ -4,26 +4,27 @@
     <title>About Chrono Trigger</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="about.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
 
   <body>
     <!-- select sounds -->
-    <audio id="select" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="selectSound" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
     <audio id="navbad" src="snd/navbad.mp3" type="audio/mp3" preload="auto"></audio>
 
     <!-- navigation -->
     <div class="navigationmain">
       <div class="float">
-        <a onmouseover="selectPlay()" href="index.html">
-        <img class="logo" 
+        <a href="index.html">
+        <img id="selectbutton"
+          class="logo" 
           src="img/logo.png" 
           alt="Chrono Trigger Logo"/>
         </a>
       </div>
       <div class="right">
-        <a onmouseover="selectPlay()" onclick="navbad()"><button class="nav" id="navcurrent">About</button></a> <br>
-        <a onmouseover="selectPlay()" href="quiz.html"><button class="nav">Quiz</button></a>
+        <a><button class="nav" id="selectbutton">About</button></a> <br>
+        <a href="quiz.html"><button class="nav" id="selectbutton">Quiz</button></a>
       </div>
     </div>
 

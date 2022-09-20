@@ -9,21 +9,22 @@
   </head>
   <body>
   <!-- select sounds -->  
-  <audio id="select" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
+  <audio id="selectSound" src="snd/select.mp3" type="audio/mp3" preload="auto"></audio>
   <audio id="navbad" src="snd/navbad.mp3" type="audio/mp3" preload="auto"></audio>
     
   <!-- navigation -->
   <div class="navigationmain">
     <div class="float">
-      <a id="selectbutton" href="index.html">
-      <img class="logo" 
+      <a href="index.html">
+      <img  id="selectbutton"
+        class="logo" 
         src="img/logo.png" 
         alt="Chrono Trigger Logo"/>
       </a>
     </div>
     <div class="right">
-      <a id="selectbutton" href="about.html"><button class="nav">About</button></a> <br>
-      <a id="selectbutton" onclick="navbad()"><button class="nav" id="navcurrent">Quiz</button></a>
+      <a href="about.html"><button id="selectbutton" class="nav">About</button></a> <br>
+      <a><button id="selectbutton" class="nav">Quiz</button></a>
     </div>
   </div>
 

@@ -4,10 +4,10 @@
     <title>Chrono Trigger</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   
-  <body onclick="showNav()">
+  <body>
     <!-- intro vid/music -->
     <video muted autoplay id="introvid"><source src="img/chrono.mp4" type="video/mp4"></video>
     <audio src="snd/Presentiment.mp3" id="bigaudio" autoplay></audio>
@@ -18,9 +18,9 @@
     <!-- navigation -->
     <div class="nav" id="nav"><p>
       <audio id="select" src="snd/select.mp3" type="audio/mp3"></audio>
-      <a onmouseover="selectPlay()" href="index.html"><button>Replay</button></a><br>
-      <a onmouseover="selectPlay()" href="about.html"><button>About</button></a><br>
-      <a onmouseover="selectPlay()" href="quiz.html"><button>Quiz</button></a>
+      <a href="index.html"><button id="selectbutton">Replay</button></a><br>
+      <a href="about.html"><button id="selectbutton">About</button></a><br>
+      <a href="quiz.html"><button id="selectbutton">Quiz</button></a>
     </p></div>
 
     <div id="hideme" class="text"><p>Click anywhere to begin navigation.</p></div>

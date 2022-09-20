@@ -6,8 +6,8 @@ if (window.location.pathname == '/quiz.html' || window.location.pathname == '/ab
 
 //plays select sound
 function selectPlay() {
-    var audio = document.getElementById("select");
-    audio.play();
+    var selectSound = document.getElementById("selectSound");
+    selectSound.play();
 }
 
 //plays this sound when trying to navigate to current page
@@ -54,3 +54,7 @@ if (window.location.pathname == '/quiz.html') {
 
 //All event listeners
 document.getElementById("selectbutton").addEventListener("mouseover", selectPlay)
+document.getElementById("selectbutton").addEventListener("click", navbad)
+if (window.location.pathname == '/index.html') {
+  document.addEventListener("click", showNav)
+}
