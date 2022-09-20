@@ -12,8 +12,8 @@ function selectPlay() {
 
 //plays this sound when trying to navigate to current page
 function navbad() {
-    var audio = document.getElementById("navbad");
-    audio.play();
+    var navbadSound = document.getElementById("navbad");
+    navbadSound.play();
 }
 
 //shows navigation on index
@@ -26,17 +26,14 @@ function showNav() {
 
 //tabs for character section in about page
 function char(evt, charName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
+    let tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
