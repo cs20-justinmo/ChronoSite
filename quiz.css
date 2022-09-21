@@ -59,7 +59,7 @@ hr {
   padding: 10px;
 }
 
-#navcurrent {
+#selectCurrent {
   color: red;
   text-decoration: underline;
 }

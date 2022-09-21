@@ -5,18 +5,28 @@ if (window.location.pathname == '/quiz.html' || window.location.pathname == '/ab
 }
 
 //plays select sound
+document.getElementById("selectbutton1").addEventListener("mouseover", selectPlay);
+document.getElementById("selectbutton2").addEventListener("mouseover", selectPlay);
+document.getElementById("selectCurrent").addEventListener("mouseover", selectPlay);
+
 function selectPlay() {
     var selectSound = document.getElementById("selectSound");
     selectSound.play();
 }
 
 //plays this sound when trying to navigate to current page
+document.getElementById("selectCurrent").addEventListener("click", navbad)
+
 function navbad() {
     var navbadSound = document.getElementById("navbad");
     navbadSound.play();
 }
 
 //shows navigation on index
+if (location.pathname == '/index.html' || location.pathname == '/') {
+  document.addEventListener("click", showNav)
+}
+
 function showNav() {
     document.getElementById('nav').style.display = "block";
     document.getElementById('hideme').style.display = "none";
@@ -47,10 +57,4 @@ function char(evt, charName) {
 if (window.location.pathname == '/quiz.html') {
   var quizBGM = document.getElementById("bgm");
   quizBGM.volume = 0.3;
-}
-
-//All event listeners
-document.getElementById("selectbutton").addEventListener("click", navbad)
-if (window.location.pathname == '/index.html' || window.location.pathname == '/') {
-  document.addEventListener("click", showNav)
 }
