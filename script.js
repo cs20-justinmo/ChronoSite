@@ -50,8 +50,7 @@ if (window.location.pathname == '/quiz.html') {
 }
 
 //All event listeners
-document.getElementById("selectbutton").addEventListener("mouseover", selectPlay)
 document.getElementById("selectbutton").addEventListener("click", navbad)
-if (window.location.pathname == '/index.html') {
+if (window.location.pathname == '/index.html' || window.location.pathname == '/') {
   document.addEventListener("click", showNav)
 }
