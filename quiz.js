@@ -78,8 +78,8 @@ function checkAnswers() {
     let percentScore = quizScore / 8 * 100;
 
     //Output
-    let resultsText = document.getElementById('finalResults');
-    resultsText.innerHTML = `Score: ${quizScore}/8 (${percentScore}%)`
+    document.getElementById("numScore").innerHTML = quizScore
+    document.getElementById("percentScore").innerHTML = percentScore
 }
 
 document.getElementById("check").addEventListener("click", checkAnswers)
