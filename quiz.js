@@ -24,7 +24,8 @@ function checkAnswers() {
     ans8 = ans8.toLowerCase();
 
     //Check answers
-    if (ans1 == '1995') {
+    if (ans1 == '1995') 
+    {
         quizScore++;
     }
     if (ans2 == 'snes' ||
@@ -36,43 +37,49 @@ function checkAnswers() {
         ans2 == 'phone' ||
         ans2 == 'iphone' ||
         ans2 == 'ios' ||
-        ans2 == 'android') {
-            quizScore++;
-        }
+        ans2 == 'android') 
+    {
+        quizScore++;
+    }
     if (ans3 == 'hironobu sakaguchi' ||
         ans3 == 'yuji horii' ||
         ans3 == 'akira toriyama' ||
         ans3 == 'sakaguchi hironobu' ||
         ans3 == 'horii yuji' ||
-        ans3 == 'toriyama akira') {
-            quizScore++;
+        ans3 == 'toriyama akira') 
+    {
+        quizScore++;
     }
     if (ans4 == '1000' ||
         ans4 == '1000ad' ||
         ans4 == '1000 ad') {
             quizScore++;
-        }
-    if (ans5 == 'lavos') {
+    }
+    if (ans5 == 'lavos') 
+    {
         quizScore++;
     }
     if (ans6 == 'yasunori mitsuda' ||
-        ans6 == 'mitsuda yasunori') {
-            quizScore++;
-        }
+        ans6 == 'mitsuda yasunori') 
+    {
+        quizScore++;
+    }
     if (ans7 == 'light' ||
         ans7 == 'shadow' ||
         ans7 == 'water' ||
         ans7 == 'ice' ||
         ans7 == 'fire' ||
-        ans7 == 'lightning') {
-            quizScore++;
-        }
+        ans7 == 'lightning') 
+    {
+        quizScore++;
+    }
     if (ans8 == 'technique' ||
         ans8 == 'tech' ||
         ans8 == 'techniques' ||
-        ans8 == 'techs') {
-            quizScore++;
-        }
+        ans8 == 'techs') 
+    {
+        quizScore++;
+    }
 
     //Calculate percentage
     let percentScore = quizScore / 8 * 100;
