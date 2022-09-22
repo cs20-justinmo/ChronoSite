@@ -35,6 +35,7 @@ function showNav() {
 }
 
 //tabs for character section in about page
+//This one doesn't use event listeners because I don't know how to use parameters with them.
 function char(evt, charName) {
     // Get all elements with class="tabcontent" and hide them
     let tabcontent = document.getElementsByClassName("tabcontent");

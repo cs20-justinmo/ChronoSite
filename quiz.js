@@ -28,9 +28,15 @@ function checkAnswers() {
         quizScore++;
     }
     if (ans2 == 'snes' ||
+        ans2 == 'super nintendo entertainment system' ||
+        ans2 == 'nintendo ds' ||
         ans2 == 'ds' ||
         ans2 == 'playstation' ||
-        ans2 == 'pc') {
+        ans2 == 'pc' ||
+        ans2 == 'phone' ||
+        ans2 == 'iphone' ||
+        ans2 == 'ios' ||
+        ans2 == 'android') {
             quizScore++;
         }
     if (ans3 == 'hironobu sakaguchi' ||
