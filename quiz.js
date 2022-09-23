@@ -1,4 +1,5 @@
-let quizScore = 0;
+document.getElementById("check").addEventListener("click", checkAnswers)
+
 function checkAnswers() {
     selectPlay();
 
@@ -11,7 +12,7 @@ function checkAnswers() {
     let ans6 = document.getElementById('q6').value;
     let ans7 = document.getElementById('q7').value;
     let ans8 = document.getElementById('q8').value;
-    quizScore = 0;
+    let quizScore = 0;
 
     //Process
     //Convert to lowercase
@@ -130,5 +131,3 @@ function checkAnswers() {
         document.getElementById("extra-message").innerHTML = "Perfect score!"
     }
 }
-
-document.getElementById("check").addEventListener("click", checkAnswers)
