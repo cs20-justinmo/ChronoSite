@@ -22,24 +22,25 @@ function navbad() {
     navbadSound.play();
 }
 
-//tabs for character section in about page
-//This one doesn't use event listeners because I don't know how to use parameters with them.
-function char(evt, charName) {
-    // Get all elements with class="tabcontent" and hide them
-    let tabcontent = document.getElementsByClassName("tabcontent");
-    for (let i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    let tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(charName).style.display = "block";
-    evt.currentTarget.className += " active";
+//New version of tabs on about page that uses event listeners
+let tablinks = document.getElementsByClassName("tablinks")
+for (let i = 0; i < tablinks.length; i++) {
+  tablinks[i].addEventListener("click", newChar)
+  tablinks[i].currentValue = i;
+}
+
+function newChar(evt) {
+  let tabValue = evt.currentTarget.currentValue;
+
+  // Get all elements with class="tabcontent" and hide them
+  let tabcontent = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Show the current tab
+  let tabName = tablinks[tabValue].innerHTML;
+  document.getElementById(tabName).style.display = "block";
 }
 
 //make audio quiet by default on quiz page
