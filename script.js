@@ -1,8 +1,6 @@
 //preloads image
-if (window.location.pathname == '/quiz.html' || window.location.pathname == '/about.html') {
-  var image = new Image();
-  image.src = "img/logohover.png";
-}
+var image = new Image();
+image.src = "img/logohover.png";
 
 //plays select sound
 document.getElementById("selectbutton1").addEventListener("mouseover", selectPlay);
@@ -25,13 +23,10 @@ function navbad() {
 //New version of tabs on about page that uses event listeners
 let tablinks = document.getElementsByClassName("tablinks")
 for (let i = 0; i < tablinks.length; i++) {
-  tablinks[i].addEventListener("click", newChar)
-  tablinks[i].currentValue = i;
+  tablinks[i].addEventListener("click", function() {newChar(i);});
 }
 
-function newChar(evt) {
-  let tabValue = evt.currentTarget.currentValue;
-
+function newChar(tabValue) {
   // Get all elements with class="tabcontent" and hide them
   let tabcontent = document.getElementsByClassName("tabcontent");
   for (let i = 0; i < tabcontent.length; i++) {
