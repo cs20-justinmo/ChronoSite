@@ -3,12 +3,12 @@ var quizBGM = document.getElementById("bgm");
 quizBGM.volume = 0.3;
 
 //Loop audio, has slight delay but it works...
-quizBGM.addEventListener("ended", audioLoop);
+// quizBGM.addEventListener("ended", audioLoop);
 
-function audioLoop() {
-    quizBGM.currentTime = 9.467;
-    quizBGM.play();
-}
+// function audioLoop() {
+//     quizBGM.currentTime = 9.467;
+//     quizBGM.play();
+// }
 
 //Check answers on button press
 document.getElementById("check").addEventListener("click", checkAnswers)
