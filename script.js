@@ -22,18 +22,6 @@ function navbad() {
     navbadSound.play();
 }
 
-//shows navigation on index
-if (location.pathname == '/index.html' || location.pathname == '/') {
-  document.addEventListener("click", showNav)
-}
-
-function showNav() {
-    document.getElementById('nav').style.display = "block";
-    document.getElementById('hideme').style.display = "none";
-    var introvid = document.getElementById('introvid');
-    introvid.currentTime = introvid.duration;
-}
-
 //tabs for character section in about page
 //This one doesn't use event listeners because I don't know how to use parameters with them.
 function char(evt, charName) {
