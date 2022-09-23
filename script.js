@@ -1,4 +1,4 @@
-//preloads image on about and quiz pages
+//preloads image
 if (window.location.pathname == '/quiz.html' || window.location.pathname == '/about.html') {
   var image = new Image();
   image.src = "img/logohover.png";
