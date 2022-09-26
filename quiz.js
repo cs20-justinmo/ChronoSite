@@ -2,13 +2,15 @@
 var quizBGM = document.getElementById("bgm");
 quizBGM.volume = 0.3;
 
-//Loop audio, has slight delay but it works...
-// quizBGM.addEventListener("ended", audioLoop);
+//Change audio to the loop
+quizBGM.addEventListener("ended", audioSwitch)
 
-// function audioLoop() {
-//     quizBGM.currentTime = 9.467;
-//     quizBGM.play();
-// }
+function audioSwitch() {
+    let BGMLoop = document.getElementById("hiddenbgm");
+    quizBGM.style.display = "none";
+    BGMLoop.style.display = "block";
+    BGMLoop.play();
+}
 
 //Check answers on button press
 document.getElementById("check").addEventListener("click", checkAnswers)

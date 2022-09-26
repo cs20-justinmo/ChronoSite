@@ -104,6 +104,15 @@ hr {
   border-image: url(img/border.png) 30 round;
 }
 
+#audiobox {
+  width: 300px;
+  margin: auto;
+}
+
+#hiddenbgm {
+  display: none;
+}
+
 .centercaption {
   font-size: 16px;
   text-align: center;
