@@ -1,10 +1,10 @@
-//preloads image
+//Preloads "Home Hover" image
 if (window.location.pathname == '/quiz.html' || window.location.pathname == '/about.html') {
   var image = new Image();
   image.src = "img/logohover.png";
 }
 
-//plays select sound
+//Plays sound on navigation button hover
 document.getElementById("selectbutton1").addEventListener("mouseover", selectPlay);
 document.getElementById("selectbutton2").addEventListener("mouseover", selectPlay);
 document.getElementById("selectCurrent").addEventListener("mouseover", selectPlay);
@@ -14,7 +14,7 @@ function selectPlay() {
     selectSound.play();
 }
 
-//plays this sound when trying to navigate to current page
+//Plays this sound when trying to navigate to current page
 document.getElementById("selectCurrent").addEventListener("click", navbad)
 
 function navbad() {
@@ -23,6 +23,7 @@ function navbad() {
 }
 
 //New version of tabs on about page that uses event listeners
+//Used on About Page only
 let tablinks = document.getElementsByClassName("tablinks")
 for (let i = 0; i < tablinks.length; i++) {
   tablinks[i].addEventListener("click", newChar)
@@ -43,7 +44,8 @@ function newChar(evt) {
   document.getElementById(tabName).style.display = "block";
 }
 
-//make audio quiet by default on quiz page
+//Makes Quiz Page BGM quiet by defualt
+//Used on Quiz Page only
 if (window.location.pathname == '/quiz.html') {
   var quizBGM = document.getElementById("bgm");
   quizBGM.volume = 0.3;

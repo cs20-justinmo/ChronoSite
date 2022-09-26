@@ -14,16 +14,11 @@ html {
 }
 
 body {
-  border: solid;
-  background-color: rgb(138, 132, 132);
-  background-image: url(img/textboxloop.png);
   color: #ffffff;
   font-family: "Chrono", sans-serif;
-  margin: 20px auto;
-  width: 600px;
-  border: 24px solid transparent;
+  margin: auto;
+  width: 650px;
   padding: 15px;
-  border-image: url(img/border.png) 30 round;
 }
 
 h1 {
@@ -98,6 +93,17 @@ hr {
 }
 
 /* other classes/ids */
+.maincontent {
+  border: solid;
+  background-color: rgb(138, 132, 132);
+  background-image: url(img/textboxloop.png);
+  margin: 30px 0;
+  width: 600px;
+  border: 24px solid transparent;
+  padding: 15px;
+  border-image: url(img/border.png) 30 round;
+}
+
 .centercaption {
   font-size: 16px;
   text-align: center;
