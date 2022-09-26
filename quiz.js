@@ -1,15 +1,15 @@
 //Make audio quiet by default
-var quizBGM = document.getElementById("bgm");
-quizBGM.volume = 0.3;
+document.getElementById("bgmintro").volume = 0.3;
 
 //Change audio to the loop
-quizBGM.addEventListener("ended", audioSwitch)
+document.getElementById("bgmintro").addEventListener("ended", audioSwitch)
 
 function audioSwitch() {
-    let BGMLoop = document.getElementById("hiddenbgm");
-    quizBGM.style.display = "none";
-    BGMLoop.style.display = "block";
-    BGMLoop.play();
+    let BGMintro = document.getElementById("bgmintro");
+    let BGMloop = document.getElementById("bgmloop");
+    BGMintro.style.display = "none";
+    BGMloop.style.display = "block";
+    BGMloop.play();
 }
 
 //Check answers on button press

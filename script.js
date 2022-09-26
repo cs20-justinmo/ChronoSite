@@ -38,10 +38,3 @@ function newChar(tabValue) {
   let tabName = tablinks[tabValue].innerHTML;
   document.getElementById(tabName).style.display = "block";
 }
-
-//Makes Quiz Page BGM quiet by defualt
-//Used on Quiz Page only
-if (window.location.pathname == '/quiz.html') {
-  var quizBGM = document.getElementById("bgm");
-  quizBGM.volume = 0.3;
-}
