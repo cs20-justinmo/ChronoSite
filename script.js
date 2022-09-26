@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 //Preloads "Home Hover" image
-if (window.location.pathname == '/quiz.html' || window.location.pathname == '/about.html') {
   var image = new Image();
   image.src = "img/logohover.png";
-}
-=======
-//preloads image
-var image = new Image();
-image.src = "img/logohover.png";
->>>>>>> 5df46ec223fe1e3dd6ebf878f8dddc069a6f774f
 
 //Plays sound on navigation button hover
 document.getElementById("selectbutton1").addEventListener("mouseover", selectPlay);
