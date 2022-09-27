@@ -16,8 +16,7 @@ function selectPlay() {
 document.getElementById("selectCurrent").addEventListener("click", navbad)
 
 function navbad() {
-    var navbadSound = document.getElementById("navbad");
-    navbadSound.play();
+    document.getElementById("navbad").play();
 }
 
 //New version of tabs on about page that uses event listeners
