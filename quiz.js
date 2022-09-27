@@ -28,14 +28,15 @@ function checkAnswers() {
     let ans7 = document.getElementById('q7').value.toLowerCase();
     let ans8 = document.getElementById('q8').value.toLowerCase();
     let quizScore = 0;
+    let questionText = document.getElementsByClassName("qtext");
 
     //Process
     //Check answers
     if (ans1 == '1995') {
         quizScore++;
-        document.getElementById("q1text").style.color = "lime";
+        questionText[0].style.color = "lime";
     } else {
-        document.getElementById("q1text").style.color = "red";
+        questionText[0].style.color = "red";
     }
 
     if (ans2 == 'snes' ||
@@ -49,9 +50,9 @@ function checkAnswers() {
         ans2 == 'ios' ||
         ans2 == 'android') {
         quizScore++;
-        document.getElementById("q2text").style.color = "lime";
+        questionText[1].style.color = "lime";
     } else {
-        document.getElementById("q2text").style.color = "red";
+        questionText[1].style.color = "red";
     }
 
     if (ans3 == 'hironobu sakaguchi' ||
@@ -61,33 +62,33 @@ function checkAnswers() {
         ans3 == 'horii yuji' ||
         ans3 == 'toriyama akira') {
         quizScore++;
-        document.getElementById("q3text").style.color = "lime";
+        questionText[2].style.color = "lime";
     } else {
-        document.getElementById("q3text").style.color = "red";
+        questionText[2].style.color = "red";
     }
 
     if (ans4 == '1000' ||
         ans4 == '1000ad' ||
         ans4 == '1000 ad') {
         quizScore++;
-        document.getElementById("q4text").style.color = "lime";
+        questionText[3].style.color = "lime";
     } else {
-        document.getElementById("q4text").style.color = "red";
+        questionText[3].style.color = "red";
     }
 
     if (ans5 == 'lavos') {
         quizScore++;
-        document.getElementById("q5text").style.color = "lime";
+        questionText[4].style.color = "lime";
     } else {
-        document.getElementById("q5text").style.color = "red";
+        questionText[4].style.color = "red";
     }
 
     if (ans6 == 'yasunori mitsuda' ||
         ans6 == 'mitsuda yasunori') {
         quizScore++;
-        document.getElementById("q6text").style.color = "lime";
+        questionText[5].style.color = "lime";
     } else {
-        document.getElementById("q6text").style.color = "red";
+        questionText[5].style.color = "red";
     }
 
     if (ans7 == 'light' ||
@@ -98,9 +99,9 @@ function checkAnswers() {
         ans7 == 'lightning') 
     {
         quizScore++;
-        document.getElementById("q7text").style.color = "lime";
+        questionText[6].style.color = "lime";
     } else {
-        document.getElementById("q7text").style.color = "red";
+        questionText[6].style.color = "red";
     }
 
     if (ans8 == 'technique' ||
@@ -109,9 +110,9 @@ function checkAnswers() {
         ans8 == 'techs') 
     {
         quizScore++;
-        document.getElementById("q8text").style.color = "lime";
+        questionText[7].style.color = "lime";
     } else {
-        document.getElementById("q8text").style.color = "red";
+        questionText[7].style.color = "red";
     }
 
     //Calculate percentage
