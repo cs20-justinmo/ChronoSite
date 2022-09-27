@@ -19,26 +19,17 @@ function checkAnswers() {
     selectPlay();
 
     //Input
-    let ans1 = document.getElementById('q1').value;
-    let ans2 = document.getElementById('q2').value;
-    let ans3 = document.getElementById('q3').value;
-    let ans4 = document.getElementById('q4').value;
-    let ans5 = document.getElementById('q5').value;
-    let ans6 = document.getElementById('q6').value;
-    let ans7 = document.getElementById('q7').value;
-    let ans8 = document.getElementById('q8').value;
+    let ans1 = document.getElementById('q1').value.toLowerCase();
+    let ans2 = document.getElementById('q2').value.toLowerCase();
+    let ans3 = document.getElementById('q3').value.toLowerCase();
+    let ans4 = document.getElementById('q4').value.toLowerCase();
+    let ans5 = document.getElementById('q5').value.toLowerCase();
+    let ans6 = document.getElementById('q6').value.toLowerCase();
+    let ans7 = document.getElementById('q7').value.toLowerCase();
+    let ans8 = document.getElementById('q8').value.toLowerCase();
     let quizScore = 0;
 
     //Process
-    //Convert to lowercase
-    ans2 = ans2.toLowerCase();
-    ans3 = ans3.toLowerCase();
-    ans4 = ans4.toLowerCase();
-    ans5 = ans5.toLowerCase();
-    ans6 = ans6.toLowerCase();
-    ans7 = ans7.toLowerCase();
-    ans8 = ans8.toLowerCase();
-
     //Check answers
     if (ans1 == '1995') {
         quizScore++;
