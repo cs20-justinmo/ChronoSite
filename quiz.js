@@ -1,5 +1,6 @@
 //Make audio quiet by default
-document.getElementById("bgmintro").volume = 0.3;
+document.getElementById("bgmintro").volume = 0.6;
+document.getElementById("bgmloop").volume = 0.6;
 
 //Change audio to the loop
 document.getElementById("bgmintro").addEventListener("ended", audioSwitch)
@@ -16,6 +17,7 @@ function audioSwitch() {
 document.getElementById("check").addEventListener("click", checkAnswers)
 
 function checkAnswers() {
+    //Located on script.js 52.485
     selectPlay();
 
     //Input
