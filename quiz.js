@@ -17,7 +17,7 @@ function audioSwitch() {
 document.getElementById("check").addEventListener("click", checkAnswers)
 
 function checkAnswers() {
-    //Located on script.js 52.485
+    //Located on script.js
     selectPlay();
 
     //Input
