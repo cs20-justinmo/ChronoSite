@@ -126,13 +126,13 @@ function checkAnswers() {
     if (quizScore == 0) {
         document.getElementById("finalResults").style.color = "black";
         document.getElementById("extra-message").innerHTML = "..."
-    } else if (quizScore >= 1 && quizScore <= 3) {
+    } else if (quizScore <= 3) {
         document.getElementById("finalResults").style.color = "red";
         document.getElementById("extra-message").innerHTML = "Try again..."
-    } else if (quizScore >= 4 && quizScore <= 5) {
+    } else if (quizScore <= 5) {
         document.getElementById("finalResults").style.color = "yellow";
         document.getElementById("extra-message").innerHTML = "OK..."
-    } else if (quizScore == 6 || quizScore == 7) {
+    } else if (quizScore <= 7) {
         document.getElementById("finalResults").style.color = "lime";
         document.getElementById("extra-message").innerHTML = "Superb!"
     } else {
