@@ -98,7 +98,8 @@ function checkAnswers() {
         ans7 == 'water' ||
         ans7 == 'ice' ||
         ans7 == 'fire' ||
-        ans7 == 'lightning') 
+        ans7 == 'lightning' ||
+        ans7 == 'heaven') 
     {
         quizScore++;
         questionText[6].style.color = "lime";
