@@ -41,7 +41,7 @@ function checkAnswers() {
         questionText[0].style.color = "red";
     }
 
-    if (ans2 == 'snes' ||
+    if (ans2 == 'snes' || 
         ans2 == 'super nintendo entertainment system' ||
         ans2 == 'nintendo ds' ||
         ans2 == 'ds' ||
